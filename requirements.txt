@@ -16,6 +16,4 @@ PyYAML
 dill
 uvicorn
 TTS
-mlflow
-tqdm
 subprocess.run

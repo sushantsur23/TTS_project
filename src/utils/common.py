@@ -32,3 +32,11 @@ def unzip_file(source: str, dest: str) -> None:
     with ZipFile(source, "r") as zip_f:
         zip_f.extractall(dest)
     logging.info(f"extracted {source} to {dest}")
+
+
+def read_text(source: str) -> None:
+    f = open(source, "r",encoding="utf8")
+    logging.info("reading file at location")
+    file = f.readlines()
+    f.close()
+    return file
