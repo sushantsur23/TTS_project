@@ -40,3 +40,9 @@ def read_text(source: str) -> None:
     file = f.readlines()
     f.close()
     return file
+
+def create_dir_file(source: str, file_name: str) -> None:
+    os.makedirs(source, exist_ok=True)
+    fo = open(file_name,"w")
+    fo.write("This is Log File")
+    fo.close()

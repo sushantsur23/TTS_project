@@ -4,7 +4,7 @@ from TTS.api import TTS
 import shutil
 from tqdm import tqdm
 import logging
-from src.utils.common import read_yaml, create_directories, read_text
+from src.utils.common import read_yaml, create_directories, read_text, create_dir_file
 # from src.utils.common1 import read_txt
 import random
 import subprocess
@@ -12,6 +12,7 @@ import subprocess
 
 STAGE = "Data Ingestion" ## <<< change stage name 
 
+create_dir_file("logs","running_logs.log")
 logging.basicConfig(
     filename=os.path.join("logs", 'running_logs.log'), 
     level=logging.INFO, 
@@ -24,8 +25,6 @@ def main(config_path, params_path):
     ## read config files
     config = read_yaml(config_path)
     params = read_yaml(params_path)
-
-    text_file_path = config['data']["data_file"]
 
     output_dir = config["data"]["output_dir"]
     create_directories([output_dir])

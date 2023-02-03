@@ -4,6 +4,8 @@ data:
   data_file: sample.txt
   output_dir: output
   file_name: output.wav
+  text_dir: data
+  text_file: sample.txt
   # parent_data_dir: PetImages
   # model_dir: model
   # init_model_file: init_model.h5

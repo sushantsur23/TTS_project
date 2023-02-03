@@ -128,4 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-tts1/
+tts2/
+output.wav
