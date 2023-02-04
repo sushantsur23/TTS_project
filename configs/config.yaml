@@ -1,7 +1,28 @@
 data:
+<<<<<<< HEAD
+  # source_url: "https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_3367a.zip"
+  model_name: tts_models\en\ljspeech\glow-tts
+  log_dir: logs
+  log_file_name: running_logs.log
+=======
   model_dir: data
+>>>>>>> 16b9d55c7ce16ee3d9209987d1a679de3967914a
   data_file: sample.txt
   output_dir: output
   file_name: output.wav
   text_dir: data
   text_file: sample.txt
+<<<<<<< HEAD
+
+params:
+  # img_shape: [180,180,3]
+  # lr: 0.001
+  # loss: sparse_categorical_crossentropy
+  # metrics: ["accuracy"]
+  # validation_split: 0.2
+  # batch_size: 32
+  # seed: 42
+  # buffer_size: 32
+  # epochs: 1
+=======
+>>>>>>> 16b9d55c7ce16ee3d9209987d1a679de3967914a

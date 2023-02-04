@@ -33,12 +33,18 @@ def unzip_file(source: str, dest: str) -> None:
         zip_f.extractall(dest)
     logging.info(f"extracted {source} to {dest}")
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 16b9d55c7ce16ee3d9209987d1a679de3967914a
 def read_text(source: str) -> None:
     f = open(source, "r",encoding="utf8")
     logging.info("reading file at location")
     file = f.readlines()
     f.close()
+<<<<<<< HEAD
+    return file
+=======
     return file
 
 def create_dir_file(source: str, file_name: str) -> None:
@@ -46,3 +52,4 @@ def create_dir_file(source: str, file_name: str) -> None:
     fo = open(file_name,"w")
     fo.write("This is Log File")
     fo.close()
+>>>>>>> 16b9d55c7ce16ee3d9209987d1a679de3967914a
