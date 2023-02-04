@@ -6,12 +6,16 @@ import pandas as pd
 import json
 
 
-def read_txt(file_path: str) -> None:
-    f = open("../data/sample.txt", "r",encoding="utf8")
-    logging.info(f"reading file at: {file_path}")
-    file = f.readlines()
-    f.close()
-    return file
+def read_txt():
+    print(os.getcwd())
+    path = "TTS_project/data/"
+    os.chdir(path=path)
+    print(os.listdir())
+    # f = open("../../data/sample.txt", "r",encoding="utf8")
+    # logging.info(f"reading file done")
+    # file = f.readlines()
+    # f.close()
+    # return file
 
     # with open(text) as txt_file:
     #     content = yaml.safe_load(yaml_file)
