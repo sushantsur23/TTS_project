@@ -16,6 +16,7 @@ PyYAML
 dill
 uvicorn
 TTS
+<<<<<<< HEAD
 mlflow
 subprocess.runnumpy==1.24.1
 pandas==1.5.3
@@ -33,3 +34,6 @@ notebook==6.5.2
 notebook_shim==0.2.2
 dill==0.3.6
 uvicorn==0.20.0
+=======
+subprocess.run
+>>>>>>> 16b9d55c7ce16ee3d9209987d1a679de3967914a
