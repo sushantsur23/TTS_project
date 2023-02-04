@@ -1,0 +1,7 @@
+data:
+  model_dir: data
+  data_file: sample.txt
+  output_dir: output
+  file_name: output.wav
+  text_dir: data
+  text_file: sample.txt
